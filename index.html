@@ -3370,6 +3370,363 @@ ex:[
 ]
 });
 
+window.SP=window.SP||{topics:[]};
+window.SP.topics.push({
+id:'study',nav:'Study & Learning',icon:'📚',hue:'indigo',
+blurb:`Studying, teaching yourself, motivation and how people really learn.`,
+p1:[
+{q:`What do you study (or what did you study), and why did you choose it?`,
+ ideas:[`Name the subject`,`Real reason for choosing it`,`Would you choose it again?`],
+ model:[`I studied languages, mainly because I loved the feeling of understanding something that was a mystery the day before.`,`To be honest, the decision was made by a single inspiring teacher at school.`,`I'd choose it again, although I'd spend more time on <mark>hands-on experience</mark> than on theory.`]},
+{q:`What is your favourite way to learn something new?`,
+ ideas:[`Your method`,`Why it works for you`,`An example`],
+ model:[`By doing it straight away.`,`If I only read about a skill, I forget it within days, but when I try it and make mistakes, it stays with me.`,`That's how I <mark>picked up</mark> basic cooking: by ruining several dinners.`]},
+{q:`Do you prefer studying alone or with other people?`,
+ ideas:[`Choose`,`Advantages`,`When the other option is better`],
+ model:[`Alone, mostly, because I get too many <mark>distractions</mark> in a group.`,`I can focus for two hours without anyone asking me about the weekend.`,`But for speaking practice, a partner is essential, so I use both.`]},
+{q:`Which subject did you find hardest at school?`,
+ ideas:[`Name it`,`Why it was hard`,`How you felt about it later`],
+ model:[`Physics, without a doubt.`,`I could memorise formulas, but I never understood what they were for, and that made every lesson feel pointless.`,`Funnily enough, I find it fascinating now that I read about it for pleasure.`]},
+{q:`Have you ever taken an online course? How was it?`,
+ ideas:[`What was it?`,`A good point`,`A weak point`],
+ model:[`Yes, a course in photography.`,`I liked being able to pause and repeat the lessons whenever I wanted.`,`The downside was that nobody checked whether I'd actually done the tasks, so I often <mark>procrastinated</mark>.`]},
+{q:`Where and when do you study best?`,
+ ideas:[`Place`,`Time of day`,`What you need around you`],
+ model:[`Early in the morning at the kitchen table.`,`My head is clear and the house is quiet.`,`I need a cup of tea and my phone in another room, otherwise nothing gets done.`]},
+{q:`Is there anything you would like to learn that has nothing to do with your work?`,
+ ideas:[`Choose something unexpected`,`Why it attracts you`,`What stops you`],
+ model:[`Pottery.`,`I'm drawn to the idea of making something real with my hands after spending all day on screens.`,`What stops me is time, but I keep telling myself that <mark>lifelong learning</mark> doesn't have to be useful.`]}
+],
+p2:{
+ cue:`Describe a skill that you taught yourself, or that you learned outside school.`,
+ say:[`what the skill is`,`how you learned it`,`what difficulties you had`,`and explain why you wanted to learn it.`],
+ follow:`Do people learn better with a teacher or on their own?`,
+ model:[
+ `I'd like to talk about baking bread, a skill I taught myself a few years ago. Nobody in my family bakes, so I had no one to ask, and I started with nothing but a recipe and a lot of enthusiasm.`,
+ `I learned mostly from video tutorials and from my own mistakes. My first loaves were so hard that they could have been used as doorstops. The biggest problem was patience: the dough needs hours to rise, and I kept rushing it. I also had to understand why things happen, for instance why the oven temperature matters, so it was <mark>a steep learning curve</mark>, and I almost gave up twice.`,
+ `I still remember the first loaf that came out properly. The crust was golden and crackled when it cooled, and the smell filled the whole flat. My neighbour knocked on the door to ask what I was cooking, and I felt ridiculously proud.`,
+ `I wanted to learn it because I like having a skill that isn't connected with my work, and because baking forces me to slow down. I think it also shows that <mark>self-study</mark> works if you're willing to <mark>cram</mark> less and practise little and often. It's something I'll keep doing for the rest of my life.`],
+ tip:`Choose a skill you can describe step by step. The Scene says what the skill is and why you started; the Details cover how you learned and the problems; the Moment is the first real success; the Reflection says what the skill gave you.`
+},
+p3:[
+{kind:`Explain`,q:`Why do some students lose motivation as they get older?`,
+ think:[`Pressure and exams`,`Lessons that feel irrelevant`,`Lack of choice`],
+ model:[`There are several reasons.`,`As students move up, studying becomes more about grades than about curiosity, and the pressure of exams can make learning feel like a chore.`,`Many also feel that what they study has no connection to real life, which is demotivating.`,`Teachers who give some choice and show a purpose can bring that motivation back.`]},
+{kind:`Evaluate`,q:`Is online learning as effective as learning in a classroom?`,
+ think:[`Flexibility`,`Self-discipline`,`Contact with teachers and peers`],
+ model:[`It depends on the person and on the subject.`,`Online courses are flexible and often cheaper, so they suit adults with busy schedules.`,`However, they demand a lot of self-discipline, and students miss the immediate feedback and the energy of a real group.`,`The most effective approach is probably a combination of both.`]},
+{kind:`Opinion`,q:`Should university education be free for everyone?`,
+ think:[`Equal opportunity`,`Cost to taxpayers`,`Quality and motivation`],
+ model:[`I think it should be free, or at least much cheaper.`,`Otherwise talented students from poorer families are left out, and society loses their potential.`,`The counter-argument is the cost to taxpayers, but educated citizens usually pay that back through better jobs and higher taxes.`,`A good compromise is free tuition with strict entry standards.`]},
+{kind:`Predict`,q:`How will technology change the way people study in the future?`,
+ think:[`Personalised learning`,`AI tutors`,`Role of teachers`],
+ model:[`I think learning will become far more personal.`,`AI tools will adapt exercises to each student's level and explain things as many times as needed.`,`This will free teachers to focus on discussion, motivation and the human side of education.`,`The risk is that students stop thinking for themselves, so critical thinking will matter more than ever.`]}
+],
+vocab:[
+{w:`self-study`,pos:`noun`,uk:`самонавчання`,def:`learning on your own without a teacher`,eg:`Self-study requires a lot of discipline.`},
+{w:`a steep learning curve`,pos:`noun phrase`,uk:`складний початок навчання`,def:`a period when you must learn a lot very quickly`,eg:`The new software has a steep learning curve.`},
+{w:`procrastinate`,pos:`verb`,uk:`відкладати на потім`,def:`delay doing something that you should do`,eg:`I procrastinate when I have to write essays.`},
+{w:`meet a deadline`,pos:`verb phrase`,uk:`вкластися в термін`,def:`finish a task on time`,eg:`She worked all night to meet the deadline.`},
+{w:`revise for`,pos:`verb phrase`,uk:`готуватися до (іспиту)`,def:`study again what you have learned before an exam`,eg:`He is revising for his final exams.`},
+{w:`hands-on experience`,pos:`noun phrase`,uk:`практичний досвід`,def:`learning by doing the real thing`,eg:`Doctors need a lot of hands-on experience.`},
+{w:`motivated`,pos:`adjective`,uk:`вмотивований`,def:`having a strong wish to do something`,eg:`She is highly motivated and never misses a class.`},
+{w:`a tutor`,pos:`noun`,uk:`репетитор, наставник`,def:`a private teacher who helps one student or a small group`,eg:`I hired a tutor to help with maths.`},
+{w:`a distraction`,pos:`noun`,uk:`те, що відволікає`,def:`something that stops you from concentrating`,eg:`My phone is my biggest distraction.`},
+{w:`cram`,pos:`verb`,uk:`зубрити`,def:`study a lot in a short time before an exam`,eg:`Don't cram the night before; study little and often.`},
+{w:`lifelong learning`,pos:`noun phrase`,uk:`навчання впродовж життя`,def:`continuing to learn throughout your life`,eg:`Lifelong learning keeps the mind active.`},
+{w:`pick up`,pos:`phrasal verb`,uk:`навчитися (мимохідь)`,def:`learn a skill without formal lessons`,eg:`I picked up Spanish by watching films.`}
+],
+ex:[
+{kind:`gap`,tag:`Gap-fill`,title:`Complete the sentences`,instr:`Use the words in the box. Each word is used once.`,
+ bank:[`curve`,`procrastinate`,`for`,`meet`,`experience`,`up`,`distractions`,`cram`,`motivated`,`learning`],
+ items:[
+ {q:`The new programme has a steep learning ___.`,a:[`curve`],why:`<i>A steep learning curve</i> = a lot to learn quickly.`},
+ {q:`I tend to ___ and leave my essays until the last night.`,a:[`procrastinate`],why:`<i>Procrastinate</i> = delay.`},
+ {q:`He is revising ___ his final exams.`,a:[`for`],why:`<i>Revise for</i> an exam.`},
+ {q:`She worked all weekend to ___ the deadline.`,a:[`meet`],why:`<i>Meet a deadline</i> = finish on time.`},
+ {q:`Doctors need a lot of hands-on ___.`,a:[`experience`],why:`<i>Hands-on experience</i> = practice.`},
+ {q:`I picked ___ some Spanish by watching films.`,a:[`up`],why:`<i>Pick up</i> = learn informally.`},
+ {q:`Too many ___ make it hard to concentrate.`,a:[`distractions`],why:`<i>Distractions</i> = things that interrupt you.`},
+ {q:`Don't ___ the night before an exam; study a little every day.`,a:[`cram`],why:`<i>Cram</i> = study too much in a short time.`},
+ {q:`She is highly ___ and never misses a class.`,a:[`motivated`],why:`<i>Motivated</i> = eager to work.`},
+ {q:`Lifelong ___ keeps the mind active.`,a:[`learning`],why:`<i>Lifelong learning</i> = learning at every age.`}
+ ]},
+{kind:`mcq`,tag:`Meaning`,title:`Choose the best answer`,
+ items:[
+ {q:`<b>"Procrastinate"</b> means…`,o:[`delay doing something`,`work very fast`,`study in a group`,`forget a lesson`],a:0,why:`Putting things off.`},
+ {q:`<b>"A steep learning curve"</b> means…`,o:[`a lot to learn in a short time`,`an easy subject`,`a graph in a textbook`,`a slow course`],a:0,why:`Hard at the start.`},
+ {q:`Which sentence is correct?`,o:[`She is revising for her exam.`,`She is revising to her exam.`,`She is revising about her exam.`,`She is revising at her exam.`],a:0,why:`<i>Revise for</i>.`},
+ {q:`<b>"Cram"</b> is…`,o:[`to study a huge amount at the last minute`,`to copy from a friend`,`to skip a class`,`to write neatly`],a:0,why:`Last-minute studying.`},
+ {q:`<b>"Hands-on experience"</b> means…`,o:[`learning by doing real work`,`reading books about a job`,`working with your hands only`,`watching videos`],a:0,why:`Practical learning.`},
+ {q:`Which is the best Part 1 answer to <i>"Do you prefer studying alone or with other people?"</i>`,o:[`Alone, mostly, because I get too many distractions in a group. But for speaking practice a partner is essential, so I use both.`,`I study.`,`Studying is learning things.`,`Yes, alone.`],a:0,why:`Position, reason and balance.`}
+ ]},
+{kind:`match`,tag:`Collocations`,title:`Match the beginnings to the endings`,instr:`Choose the word that completes each expression.`,
+ items:[
+ [`sit an …`,`exam`,`<i>Sit an exam</i> = take an exam.`],
+ [`attend a …`,`lecture`,`<i>Attend a lecture</i> = go to a talk at university.`],
+ [`hand in an …`,`assignment`,`<i>Hand in an assignment</i> = give your work to the teacher.`],
+ [`take …`,`notes`,`<i>Take notes</i> = write down key points.`],
+ [`do …`,`research`,`<i>Do research</i> = look for information.`],
+ [`a study …`,`group`,`<i>A study group</i> = students who learn together.`],
+ [`pass with …`,`distinction`,`<i>Pass with distinction</i> = get a very high result.`],
+ [`a part-time …`,`course`,`<i>A part-time course</i> = studying alongside work.`]
+ ]},
+{kind:`label`,tag:`Structure`,title:`Name each part of the answer`,instr:`Question: "Should schools teach practical skills such as cooking and money management?" The sentences are mixed up. Choose the role of each sentence.`,
+ labels:[`Opinion`,`Reason`,`Example`,`Other side`],
+ items:[
+ {s:`Yes, I think they absolutely should.`,a:0,why:`A clear position.`},
+ {s:`These are skills that everyone needs every day, yet most students leave school without them.`,a:1,why:`The reason.`},
+ {s:`I only understood how loans and interest work in my twenties, after I'd already made some costly mistakes.`,a:2,why:`A personal example.`},
+ {s:`Of course, the timetable is already full, so something else would have to be reduced.`,a:3,why:`The counter-view.`}
+ ]},
+{kind:`rw`,tag:`Upgrade`,title:`Make the sentence Band 7`,instr:`Rewrite each plain sentence using a topic expression. Then compare with the model versions.`,
+ items:[
+ {q:`I always leave my homework until the last moment.`,models:[`I tend to procrastinate.`,`I procrastinate and leave everything until the last night.`],check:`Did you use <i>procrastinate</i>?`},
+ {q:`The first month of the new job was very difficult because I had to learn so much.`,models:[`The first month was a steep learning curve.`,`The job had a steep learning curve at the beginning.`],check:`Did you use <i>a steep learning curve</i>?`},
+ {q:`I learned some Italian without taking lessons.`,models:[`I picked up some Italian.`,`I picked up some Italian on holiday.`],check:`Did you use <i>pick up</i>?`},
+ {q:`She really wants to learn and works hard.`,models:[`She is highly motivated.`,`She is a highly motivated student.`],check:`Did you use <i>motivated</i>?`}
+ ]}
+]
+});
+
+window.SP=window.SP||{topics:[]};
+window.SP.topics.push({
+id:'environment',nav:'Environment & Nature',icon:'🌿',hue:'moss',
+blurb:`Litter, recycling, green spaces and protecting the nature around us.`,
+p1:[
+{q:`Is there much green space in the place where you live?`,
+ ideas:[`Yes or no, with detail`,`How you use it`,`What you would improve`],
+ model:[`Quite a lot, actually: there's a park ten minutes from my home and a forest just beyond it.`,`I walk there almost every evening to clear my head.`,`What I'd improve is the lighting, because after dark many people avoid it.`]},
+{q:`Do you recycle? How easy is it where you live?`,
+ ideas:[`What you separate`,`How convenient`,`Your honest habit`],
+ model:[`I do, although I'm not perfect.`,`We separate paper, plastic and glass, and the bins are just outside the building, which makes it easy.`,`The hardest thing is remembering what goes where, so I keep a list on the fridge.`]},
+{q:`What is the biggest environmental problem in your area?`,
+ ideas:[`One specific problem`,`Who or what causes it`,`Is anyone solving it?`],
+ model:[`Air pollution in winter.`,`Many houses burn coal or waste to keep warm, and on cold days <mark>the air quality</mark> becomes really bad.`,`There are subsidies to change heating systems, but the change is slow.`]},
+{q:`Have you ever taken part in cleaning up a park, beach or river?`,
+ ideas:[`Yes or no`,`What happened`,`How you felt`],
+ model:[`Yes, once with my colleagues.`,`We spent a Saturday collecting <mark>litter</mark> along a river bank and filled more than forty bags.`,`It was shocking, but also rewarding to see the difference by the evening.`]},
+{q:`Do you try to reduce the amount of plastic you use?`,
+ ideas:[`What you do`,`What is difficult`,`Is it worth it?`],
+ model:[`I try, mostly with simple things like a cloth bag and a refillable bottle.`,`It's hard to avoid <mark>single-use plastic</mark> completely, as almost everything in the supermarket is wrapped.`,`Still, small changes add up when many people make them.`]},
+{q:`Do you prefer spending time in nature or in the city?`,
+ ideas:[`Choose`,`What each gives you`,`Your ideal balance`],
+ model:[`Nature, definitely, but I couldn't live there full time.`,`The countryside gives me peace and fresh air, while the city gives me people, cafés and work.`,`I'd say the ideal is a city flat with a forest nearby.`]},
+{q:`Do you think what ordinary people do really makes a difference?`,
+ ideas:[`Your position`,`Why`,`An example`],
+ model:[`I believe it does, but only in large numbers.`,`One person using a cloth bag changes nothing, yet a whole country doing it reduces <mark>waste</mark> by millions of bags.`,`Besides, personal habits influence friends and children.`]}
+],
+p2:{
+ cue:`Describe a natural place in your country that you think should be protected.`,
+ say:[`where it is and what it looks like`,`what you can see or do there`,`what threatens it`,`and explain why you think it should be protected.`],
+ follow:`Who should be responsible for protecting natural places?`,
+ model:[
+ `I'd like to describe an old beech forest in the Carpathian mountains where I've been walking since I was a teenager. It's about two hours from the nearest city, and you reach it by a narrow path that gets muddy after rain.`,
+ `The forest is full of huge trees, some of them hundreds of years old, and in spring the ground is covered with wild garlic. You can hear birds everywhere, and with luck you can spot deer. People go there to hike, pick mushrooms or simply sit in silence. The main threats are illegal logging, rubbish left by visitors and the growing number of cars on the nearby road, which damages the <mark>biodiversity</mark> of the area.`,
+ `I remember a hike a couple of years ago when we found a pile of bags and bottles under a tree, only ten metres from the path. We went back with gloves and spent the afternoon clearing it. A man who walked past said thank you and joined us for an hour, which made me realise how many people care but wait for someone else to start.`,
+ `I think this forest should be protected because ancient woods can't be replaced, as it takes centuries for them to grow back. It's also a habitat for <mark>endangered species</mark> and an important place for people's <mark>wellbeing</mark>. If we don't take <mark>conservation</mark> seriously now, our children will only see these places in photographs.`],
+ tip:`Choose a place you can picture in detail. The Scene says where it is; the Details cover what you can see or do and the threats; the Moment is one memory there; the Reflection explains why it deserves protection.`
+},
+p3:[
+{kind:`Explain`,q:`Why do many people know about environmental problems but do little to help?`,
+ think:[`Convenience and habit`,`Feeling that one person is powerless`,`Cost of green options`],
+ model:[`There are a few reasons.`,`Eco-friendly choices are often less convenient or more expensive, and old habits are hard to change.`,`Many people also feel that their personal effort is too small to matter when big companies pollute so much.`,`This is why clear rules and easy alternatives are more effective than just raising awareness.`]},
+{kind:`Evaluate`,q:`Who should do more to protect the environment, governments or individuals?`,
+ think:[`Laws and infrastructure`,`Daily choices`,`Responsibility of companies`],
+ model:[`Both, but governments have the greater power.`,`They can introduce laws, tax pollution and build recycling and public transport systems, which individuals can't do alone.`,`Even so, citizens must support these measures and change their habits, otherwise rules remain on paper.`,`So I'd say responsibility is shared, but the leading role belongs to governments and big companies.`]},
+{kind:`Opinion`,q:`Should single-use plastic, such as bags and packaging, be banned?`,
+ think:[`Impact on nature`,`Alternatives`,`Hygiene and cost`],
+ model:[`I think a gradual ban is a good idea.`,`Plastic bags and packaging stay in nature for hundreds of years and harm animals, especially in oceans and rivers.`,`Some products, such as medical equipment, still need plastic for hygiene, so exceptions are needed.`,`With cheap alternatives like paper and reusable bags, the ban would be easy to accept.`]},
+{kind:`Predict`,q:`How will cities change in the future to become greener?`,
+ think:[`Transport`,`Buildings and parks`,`Energy`],
+ model:[`I expect cities to become much quieter and cleaner.`,`Electric vehicles and better public transport will replace many cars, and city centres will have more pedestrian zones.`,`Buildings will have green roofs and solar panels, and more parks will be created to cool the air in summer.`,`Cities that do this will be healthier and more pleasant places to live.`]}
+],
+vocab:[
+{w:`litter`,pos:`noun`,uk:`сміття (на вулиці)`,def:`rubbish left in public places`,eg:`There was litter all along the beach.`},
+{w:`recycle`,pos:`verb`,uk:`переробляти, сортувати`,def:`process used materials so they can be used again`,eg:`We recycle glass and paper.`},
+{w:`single-use plastic`,pos:`noun phrase`,uk:`пластик одноразового використання`,def:`plastic items that are thrown away after one use`,eg:`Many countries are banning single-use plastic.`},
+{w:`biodiversity`,pos:`noun`,uk:`біорізноманіття`,def:`the variety of plants and animals in an area`,eg:`Logging reduces the biodiversity of the forest.`},
+{w:`endangered species`,pos:`noun phrase`,uk:`види під загрозою зникнення`,def:`animals or plants at risk of disappearing`,eg:`The tiger is an endangered species.`},
+{w:`conservation`,pos:`noun`,uk:`збереження природи`,def:`protection of nature and natural resources`,eg:`Conservation projects protect wild habitats.`},
+{w:`air quality`,pos:`noun phrase`,uk:`якість повітря`,def:`how clean or polluted the air is`,eg:`Air quality in the city is poor in winter.`},
+{w:`waste`,pos:`noun`,uk:`відходи, марнування`,def:`things thrown away; using too much of something`,eg:`We should reduce food waste.`},
+{w:`eco-friendly`,pos:`adjective`,uk:`екологічний`,def:`not harmful to the environment`,eg:`She buys eco-friendly cleaning products.`},
+{w:`wellbeing`,pos:`noun`,uk:`благополуччя`,def:`the state of being healthy and happy`,eg:`Time in nature improves our wellbeing.`},
+{w:`sustainable`,pos:`adjective`,uk:`сталий, екологічно збалансований`,def:`able to continue without damaging the environment`,eg:`We need more sustainable ways of travelling.`},
+{w:`a green space`,pos:`noun phrase`,uk:`зелена зона`,def:`an area of grass, trees or plants in a town`,eg:`Cities need more green spaces.`}
+],
+ex:[
+{kind:`gap`,tag:`Gap-fill`,title:`Complete the sentences`,instr:`Use the words in the box. Each word is used once.`,
+ bank:[`litter`,`recycle`,`plastic`,`biodiversity`,`endangered`,`conservation`,`quality`,`waste`,`friendly`,`sustainable`],
+ items:[
+ {q:`We spent the day picking up ___ in the park.`,a:[`litter`],why:`<i>Litter</i> = rubbish in public places.`},
+ {q:`In our building we ___ paper, glass and plastic.`,a:[`recycle`],why:`<i>Recycle</i> = process for reuse.`},
+ {q:`Many shops have stopped giving out single-use ___ bags.`,a:[`plastic`],why:`<i>Single-use plastic</i> bags.`},
+ {q:`The wetlands are rich in ___, with hundreds of species.`,a:[`biodiversity`],why:`<i>Biodiversity</i> = variety of life.`},
+ {q:`The sea turtle is an ___ species.`,a:[`endangered`],why:`<i>Endangered species</i> = at risk of disappearing.`},
+ {q:`Wildlife ___ projects protect habitats.`,a:[`conservation`],why:`<i>Conservation</i> = protecting nature.`},
+ {q:`In winter, the air ___ in many towns is very poor.`,a:[`quality`],why:`<i>Air quality</i> = how clean the air is.`},
+ {q:`We should reduce food ___ at home.`,a:[`waste`],why:`<i>Food waste</i> = food thrown away.`},
+ {q:`She buys only eco-___ products.`,a:[`friendly`],why:`<i>Eco-friendly</i> = not harmful to nature.`},
+ {q:`We need more ___ ways of producing energy.`,a:[`sustainable`],why:`<i>Sustainable</i> = can continue without harm.`}
+ ]},
+{kind:`mcq`,tag:`Meaning`,title:`Choose the best answer`,
+ items:[
+ {q:`<b>"Biodiversity"</b> means…`,o:[`the variety of living things in an area`,`a type of fuel`,`a recycling bin`,`a nature reserve`],a:0,why:`Variety of plants and animals.`},
+ {q:`<b>"Endangered species"</b> are…`,o:[`animals or plants that may disappear`,`dangerous animals`,`animals kept in zoos`,`new species`],a:0,why:`At risk of extinction.`},
+ {q:`Which sentence is correct?`,o:[`Litter was left all along the beach.`,`Litters were left all along the beach.`,`A litter were left all along the beach.`,`Litters was left all along the beach.`],a:0,why:`<i>Litter</i> is uncountable.`},
+ {q:`<b>"Sustainable"</b> means…`,o:[`able to continue without harming the environment`,`very expensive`,`made of plastic`,`easy to repair`],a:0,why:`Long-term and responsible.`},
+ {q:`<b>"Wellbeing"</b> is…`,o:[`the state of being healthy and happy`,`a deep hole with water`,`good weather`,`a type of exercise`],a:0,why:`Health and happiness.`},
+ {q:`Which is the best Part 1 answer to <i>"Do you think what ordinary people do really makes a difference?"</i>`,o:[`I believe it does, but only in large numbers. One person with a cloth bag changes nothing, yet a whole country doing it reduces waste by millions of bags.`,`Yes, people do things.`,`It makes a difference because it is important.`,`I don't know.`],a:0,why:`Position, reason and example.`}
+ ]},
+{kind:`match`,tag:`Collocations`,title:`Match the beginnings to the endings`,instr:`Choose the word that completes each expression.`,
+ items:[
+ [`protect the …`,`habitat`,`<i>Protect the habitat</i> = keep the natural home of animals safe.`],
+ [`reduce your carbon …`,`footprint`,`<i>Carbon footprint</i> = the CO₂ you cause.`],
+ [`a nature …`,`reserve`,`<i>A nature reserve</i> = a protected area.`],
+ [`illegal …`,`logging`,`<i>Illegal logging</i> = cutting trees without permission.`],
+ [`renewable …`,`energy`,`<i>Renewable energy</i> = sun, wind, water.`],
+ [`a recycling …`,`bin`,`<i>A recycling bin</i> = a container for sorted waste.`],
+ [`raise …`,`awareness`,`<i>Raise awareness</i> = make people notice a problem.`],
+ [`natural …`,`resources`,`<i>Natural resources</i> = water, wood, minerals.`]
+ ]},
+{kind:`label`,tag:`Structure`,title:`Name each part of the answer`,instr:`Question: "Should private cars be banned from city centres?" The sentences are mixed up. Choose the role of each sentence.`,
+ labels:[`Opinion`,`Reason`,`Example`,`Other side`],
+ items:[
+ {s:`I think a ban is a good idea, at least in the busiest areas.`,a:0,why:`A clear position.`},
+ {s:`Cars cause pollution and noise, and the space they use could be given to people.`,a:1,why:`The reason.`},
+ {s:`When my local high street became pedestrian-only, the cafés got busier and the air felt cleaner.`,a:2,why:`A real example.`},
+ {s:`On the other hand, disabled and elderly people need access, so there must be exceptions.`,a:3,why:`The counter-view.`}
+ ]},
+{kind:`rw`,tag:`Upgrade`,title:`Make the sentence Band 7`,instr:`Rewrite each plain sentence using a topic expression. Then compare with the model versions.`,
+ items:[
+ {q:`There were many bottles and bags on the beach.`,models:[`There was litter all along the beach.`,`The beach was covered in litter.`],check:`Did you use <i>litter</i>?`},
+ {q:`The forest has lots of different plants and animals.`,models:[`The forest has rich biodiversity.`,`The forest is famous for its biodiversity.`],check:`Did you use <i>biodiversity</i>?`},
+ {q:`The air in my city is very dirty in winter.`,models:[`The air quality in my city is poor in winter.`,`Air quality drops badly in winter.`],check:`Did you use <i>air quality</i>?`},
+ {q:`Being in nature makes people healthier and happier.`,models:[`Time in nature improves our wellbeing.`,`Nature is good for our wellbeing.`],check:`Did you use <i>wellbeing</i>?`}
+ ]}
+]
+});
+
+window.SP=window.SP||{topics:[]};
+window.SP.topics.push({
+id:'social',nav:'Social Problems',icon:'🤝',hue:'brick',
+blurb:`Homelessness, loneliness, poverty and what communities and governments can do.`,
+p1:[
+{q:`What do you think is the biggest social problem in your country?`,
+ ideas:[`One specific problem`,`Who it affects`,`A possible solution`],
+ model:[`I'd say the cost of living, especially housing.`,`Many young people can't afford to rent a flat on their own and stay with their parents well into their thirties.`,`More affordable housing would be the most direct solution.`]},
+{q:`Have you ever done any volunteer work?`,
+ ideas:[`Yes or no`,`What you did`,`What you gained`],
+ model:[`Yes, I helped at a charity shop for a few months.`,`I sorted donated clothes and talked to customers, many of whom were elderly and just wanted a chat.`,`It taught me that small gestures can mean a lot to someone who is lonely.`]},
+{q:`Do you think loneliness is a problem today?`,
+ ideas:[`Your position`,`Why it happens`,`Who suffers most`],
+ model:[`Definitely, and it's ironic that we're more connected than ever.`,`We message people all day but see them rarely, and <mark>social isolation</mark> affects not only the elderly but also students and young professionals.`,`I think a real conversation can't be replaced by a screen.`]},
+{q:`Who should help people who are homeless: the government or ordinary people?`,
+ ideas:[`Choose or share`,`What each can do`,`A realistic view`],
+ model:[`Mainly the government, with support from charities.`,`Only the state can provide housing and treatment on a large scale.`,`But ordinary people can help by donating, volunteering or simply treating homeless people with respect.`]},
+{q:`What problems do young people face today?`,
+ ideas:[`Name two`,`Why they are serious`,`Compare with the past`],
+ model:[`I think the main ones are pressure and uncertainty.`,`Young people are expected to succeed early, yet jobs are less stable and <mark>the cost of living</mark> keeps rising.`,`Social media makes it worse because everyone compares their life with others' highlights.`]},
+{q:`Do people in your town help each other?`,
+ ideas:[`General picture`,`An example`,`What could be better`],
+ model:[`Mostly, yes, particularly in a crisis.`,`When there was a flood last year, neighbours I'd never met were carrying sandbags together.`,`In everyday life, though, people are often too busy to notice who needs help.`]},
+{q:`Do you ever give money to charity?`,
+ ideas:[`Yes or no`,`Which kind`,`How you decide`],
+ model:[`Yes, a small amount every month.`,`I prefer to <mark>donate</mark> to organisations that publish where the money goes, so I know it's used properly.`,`Giving regularly feels more useful than giving only when someone asks.`]}
+],
+p2:{
+ cue:`Describe a time when you helped other people in your community.`,
+ say:[`what the situation was`,`what you did to help`,`who else took part`,`and explain how you felt about it.`],
+ follow:`Why do some people not want to help others?`,
+ model:[
+ `I'd like to describe a charity collection that I helped to organise at my school a few winters ago. A local shelter had asked for warm clothes and food for families who were struggling, and our class decided to respond.`,
+ `We put boxes in the corridor and made posters, and I spent two weeks reminding everybody to bring something. Parents, teachers and even the caretaker contributed. In the end we filled more than thirty boxes with coats, blankets and tins of food, and a group of us loaded them into a van and took them to the shelter. It was exhausting but well organised, since each person had a clear task.`,
+ `What I remember best is meeting a mother at the shelter who tried on one of the coats for her daughter and smiled for the first time during our visit. She didn't say much, only thank you, but I could see how much it meant. The whole group went quiet for a moment.`,
+ `I felt proud, but also a bit humbled. I realised that <mark>tackling</mark> a big problem doesn't have to mean doing something huge; a small, well-organised effort by ordinary people can make life easier for those who are <mark>vulnerable</mark>. Since then I've tried to <mark>volunteer</mark> whenever I can, because it gives me a sense of belonging to a real community.`],
+ tip:`Choose an event you can tell as a story. The Scene explains the need; the Details cover what you and others did; the Moment is one human image; the Reflection says what you learned.`
+},
+p3:[
+{kind:`Explain`,q:`Why do some people become homeless?`,
+ think:[`Loss of job or housing`,`Family breakdown and health`,`Lack of support`],
+ model:[`There's rarely a single cause.`,`Often it begins with losing a job or a home, and then problems such as illness, debt or a family breakdown make recovery difficult.`,`Without a <mark>safety net</mark> of friends, family or state help, one crisis can lead to the street.`,`That's why prevention, such as early financial support, is more effective than dealing with the consequences.`]},
+{kind:`Evaluate`,q:`Is it better to give money to charity or to give your time as a volunteer?`,
+ think:[`Impact of each`,`Skills and time`,`Personal connection`],
+ model:[`Both are valuable, but they work differently.`,`Money allows professional organisations to buy what's needed and plan long-term projects.`,`Volunteering brings a personal touch and can change the helper as well as the person helped.`,`If I had to choose, I'd do whatever matches my situation: money when I'm busy, time when I can spare it.`]},
+{kind:`Opinion`,q:`Should governments do more to support elderly people?`,
+ think:[`Pensions and healthcare`,`Ageing population`,`Loneliness`],
+ model:[`I think they should, because the number of elderly people is growing fast.`,`Many live on small pensions and struggle with medical costs and loneliness.`,`Governments can improve healthcare and fund community centres, but families and neighbours also have a role.`,`A society is judged by how it treats the people who can no longer support themselves.`]},
+{kind:`Predict`,q:`Will social problems such as loneliness get worse as technology develops?`,
+ think:[`Online life`,`Remote work`,`New ways to connect`],
+ model:[`It may get worse before it gets better.`,`More work and entertainment move online, so people have fewer reasons to meet in person.`,`On the other hand, technology helps isolated people find communities, and many cities are creating shared spaces to bring people together.`,`The outcome will depend on whether we use technology to replace contact or to start it.`]}
+],
+vocab:[
+{w:`homelessness`,pos:`noun`,uk:`бездомність`,def:`the situation of having no permanent home`,eg:`Homelessness has increased in many cities.`},
+{w:`poverty`,pos:`noun`,uk:`бідність`,def:`the state of having very little money`,eg:`Many families live in poverty.`},
+{w:`social isolation`,pos:`noun phrase`,uk:`соціальна ізоляція`,def:`having little contact with other people`,eg:`Social isolation affects many older people.`},
+{w:`the cost of living`,pos:`noun phrase`,uk:`вартість життя`,def:`the money needed for basic things like food and housing`,eg:`The cost of living keeps rising.`},
+{w:`a safety net`,pos:`noun phrase`,uk:`соціальна підтримка`,def:`help that protects people from serious difficulty`,eg:`Benefits provide a safety net for the unemployed.`},
+{w:`vulnerable`,pos:`adjective`,uk:`вразливий`,def:`easily harmed and needing protection`,eg:`Children and the elderly are especially vulnerable.`},
+{w:`donate`,pos:`verb`,uk:`жертвувати`,def:`give money or things to help`,eg:`She donates to a children's charity.`},
+{w:`volunteer`,pos:`verb`,uk:`займатися волонтерством`,def:`do unpaid work to help others`,eg:`He volunteers at a food bank.`},
+{w:`tackle`,pos:`verb`,uk:`вирішувати (проблему)`,def:`try to deal with a difficult problem`,eg:`The government must tackle unemployment.`},
+{w:`an ageing population`,pos:`noun phrase`,uk:`старіння населення`,def:`a society where the average age is rising`,eg:`An ageing population puts pressure on healthcare.`},
+{w:`a charity`,pos:`noun`,uk:`благодійна організація`,def:`an organisation that raises money to help people`,eg:`The charity helps homeless families.`},
+{w:`a sense of community`,pos:`noun phrase`,uk:`відчуття спільноти`,def:`the feeling of belonging to a group of neighbours`,eg:`Festivals create a strong sense of community.`}
+],
+ex:[
+{kind:`gap`,tag:`Gap-fill`,title:`Complete the sentences`,instr:`Use the words in the box. Each word is used once.`,
+ bank:[`homelessness`,`poverty`,`isolation`,`living`,`net`,`vulnerable`,`donate`,`volunteers`,`tackle`,`charity`],
+ items:[
+ {q:`___ has increased in many big cities.`,a:[`homelessness`],why:`<i>Homelessness</i> = having no home.`},
+ {q:`Millions of families still live in ___.`,a:[`poverty`],why:`<i>Live in poverty</i> = have very little money.`},
+ {q:`Social ___ is a serious problem for older people.`,a:[`isolation`],why:`<i>Social isolation</i> = lack of contact.`},
+ {q:`The cost of ___ has risen sharply this year.`,a:[`living`],why:`<i>Cost of living</i> = price of basics.`},
+ {q:`Benefits provide a safety ___ for people who lose their jobs.`,a:[`net`],why:`<i>A safety net</i> = protection.`},
+ {q:`Children are especially ___ in a crisis.`,a:[`vulnerable`],why:`<i>Vulnerable</i> = easily harmed.`},
+ {q:`I ___ a small amount to a children's hospital each month.`,a:[`donate`],why:`<i>Donate</i> = give to help.`},
+ {q:`He ___ at a food bank every weekend.`,a:[`volunteers`],why:`<i>Volunteer</i> = work without pay.`},
+ {q:`The government has promised to ___ youth unemployment.`,a:[`tackle`],why:`<i>Tackle a problem</i> = deal with it.`},
+ {q:`The ___ raises money for homeless families.`,a:[`charity`],why:`<i>A charity</i> = a helping organisation.`}
+ ]},
+{kind:`mcq`,tag:`Meaning`,title:`Choose the best answer`,instr:`One answer is correct in each question.`,
+ items:[
+ {q:`<b>"Vulnerable"</b> means…`,o:[`easily harmed and in need of protection`,`very strong`,`unwilling to help`,`rich`],a:0,why:`Needing protection.`},
+ {q:`<b>"A safety net"</b> is…`,o:[`support that protects people in hard times`,`a net in a sports hall`,`a security camera`,`insurance for a car`],a:0,why:`Protection from falling into serious difficulty.`},
+ {q:`Which sentence is correct?`,o:[`She donates to a local charity.`,`She donates a local charity.`,`She donates for a local charity.`,`She donates at a local charity.`],a:0,why:`<i>Donate to</i>.`},
+ {q:`<b>"Tackle a problem"</b> means…`,o:[`try to deal with it`,`ignore it`,`cause it`,`discuss it politely`],a:0,why:`Take action on a problem.`},
+ {q:`<b>"An ageing population"</b> means…`,o:[`the average age of people is rising`,`most people are old`,`fewer babies are healthy`,`people retire early`],a:0,why:`Society getting older on average.`},
+ {q:`Which is the best Part 1 answer to <i>"Do you think loneliness is a problem today?"</i>`,o:[`Definitely, and it's ironic that we're more connected than ever. We message all day but see people rarely, and it affects young people as well as the elderly.`,`Yes, loneliness is a problem.`,`Loneliness means being alone.`,`I have friends.`],a:0,why:`Position, reason and wider view.`}
+ ]},
+{kind:`match`,tag:`Collocations`,title:`Match the beginnings to the endings`,instr:`Choose the word that completes each expression.`,
+ items:[
+ [`raise …`,`funds`,`<i>Raise funds</i> = collect money for a cause.`],
+ [`a food …`,`bank`,`<i>A food bank</i> = a place giving free food to people in need.`],
+ [`live below the poverty …`,`line`,`<i>The poverty line</i> = income level under which people are poor.`],
+ [`provide …`,`shelter`,`<i>Provide shelter</i> = give a place to stay.`],
+ [`social …`,`services`,`<i>Social services</i> = public help for families.`],
+ [`a good …`,`cause`,`<i>A good cause</i> = something worth supporting.`],
+ [`lend a helping …`,`hand`,`<i>Lend a helping hand</i> = help someone.`],
+ [`a close-knit …`,`community`,`<i>A close-knit community</i> = people who know and support each other.`]
+ ]},
+{kind:`label`,tag:`Structure`,title:`Name each part of the answer`,instr:`Question: "Should companies be required to give employees paid time for volunteering?" The sentences are mixed up. Choose the role of each sentence.`,
+ labels:[`Opinion`,`Reason`,`Example`,`Other side`],
+ items:[
+ {s:`I think it's a good idea, as long as it's not forced.`,a:0,why:`A clear position.`},
+ {s:`Employees feel more connected to their community, and charities get skilled help.`,a:1,why:`The reason.`},
+ {s:`A friend's firm gives everyone two days a year, and her team spent theirs repainting a children's centre.`,a:2,why:`A concrete example.`},
+ {s:`However, small businesses may not be able to afford the lost working hours.`,a:3,why:`The counter-view.`}
+ ]},
+{kind:`rw`,tag:`Upgrade`,title:`Make the sentence Band 7`,instr:`Rewrite each plain sentence using a topic expression. Then compare with the model versions.`,
+ items:[
+ {q:`Prices of food and rent keep going up.`,models:[`The cost of living keeps rising.`,`The cost of living has risen sharply.`],check:`Did you use <i>the cost of living</i>?`},
+ {q:`Old people often have nobody to talk to.`,models:[`Many elderly people suffer from social isolation.`,`Social isolation is common among older people.`],check:`Did you use <i>social isolation</i>?`},
+ {q:`The government must try to solve this problem.`,models:[`The government must tackle this problem.`,`The government has to tackle the problem urgently.`],check:`Did you use <i>tackle</i>?`},
+ {q:`Children and old people can be easily hurt in a crisis.`,models:[`Children and the elderly are especially vulnerable in a crisis.`,`The most vulnerable groups suffer first.`],check:`Did you use <i>vulnerable</i>?`}
+ ]}
+]
+});
+
 
 </script>
 <script>
