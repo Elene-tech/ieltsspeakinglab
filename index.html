@@ -3727,6 +3727,363 @@ ex:[
 ]
 });
 
+window.SP=window.SP||{topics:[]};
+window.SP.topics.push({
+id:'shopping',nav:'Shopping & Spending',icon:'🛍️',hue:'peach',
+blurb:`Buying things, online or in shops, impulse purchases and consumer habits.`,
+p1:[
+{q:`Do you enjoy shopping? What kind of shopping do you like most?`,
+ ideas:[`Yes or no, with nuance`,`Which type`,`Why`],
+ model:[`It depends on what I'm buying.`,`I love browsing in bookshops and street markets, but I find clothes shopping tiring.`,`I enjoy places where I can discover something unexpected, rather than just searching for a specific item.`]},
+{q:`Do you prefer shopping online or in shops?`,
+ ideas:[`Choose`,`Advantages`,`When the other is better`],
+ model:[`Online for everyday things, in shops for anything I need to touch or try on.`,`Ordering online saves time and I can <mark>compare prices</mark> in a minute.`,`But shoes and furniture I always buy in person, because returning them is a nuisance.`]},
+{q:`Have you ever bought something on impulse and regretted it?`,
+ ideas:[`What was it?`,`Why did you buy it?`,`What happened to it?`],
+ model:[`Yes, a very expensive bread machine.`,`I saw a video, imagined fresh bread every morning and <mark>bought it on impulse</mark>.`,`It's now in a cupboard, and I've used it exactly twice.`]},
+{q:`What was the last thing you bought that you were really pleased with?`,
+ ideas:[`Name it`,`Why it is good`,`How you use it`],
+ model:[`A secondhand leather bag from a market.`,`It was cheaper than a new one, the quality was excellent, and it's got a bit of history.`,`I use it every day, and it looks better the older it gets.`]},
+{q:`Do you read reviews before buying something?`,
+ ideas:[`Always or sometimes`,`Which reviews you trust`,`Their limits`],
+ model:[`Yes, almost always for anything over a certain price.`,`I look for detailed negative reviews, since they tell you more than a hundred five-star ones.`,`I'm suspicious of reviews that sound like advertisements.`]},
+{q:`Is it better to buy cheap things often, or expensive things that last?`,
+ ideas:[`Take a position`,`Reason`,`Example`],
+ model:[`Expensive and durable, in most cases.`,`A good coat that lasts ten years is cheaper than a new cheap coat every winter.`,`The exception is things I don't care about, like a phone case.`]},
+{q:`Do you ever shop in markets or secondhand shops?`,
+ ideas:[`Yes or no`,`What you look for`,`What you like about it`],
+ model:[`Yes, I love them.`,`I look for books, ceramics and old kitchen items, things that have character.`,`Also, buying secondhand is a good way to reduce <mark>waste</mark> and a nice way to find a bargain.`]}
+],
+p2:{
+ cue:`Describe something you bought that you were very pleased with.`,
+ say:[`what it was and where you bought it`,`why you decided to buy it`,`how much you paid for it and how you use it`,`and explain why you are so pleased with it.`],
+ follow:`Why do people buy things they don't need?`,
+ model:[
+ `I'd like to talk about a pair of old, brown leather boots that I bought three years ago in a small shop in the town centre. I'd been walking past the window for weeks before I went in.`,
+ `The shop was run by an elderly man who repaired and sold shoes, and these boots were made locally. I decided to buy them because my previous pair had fallen apart after just one winter, and I'd promised myself that I'd stop buying cheap things that don't last. They cost about four times as much as I usually spend on shoes, and I hesitated for a long time at the till. Now I wear them every autumn and winter, and the soles have already been replaced once, for a very small price.`,
+ `I remember that on the first rainy day I walked home through puddles with dry feet and felt almost smug. A colleague asked where I'd found them, and in the end three of my friends went to the same shop.`,
+ `I'm very pleased with them because they proved that <mark>good quality</mark> is worth paying for. They're comfortable and have a kind of character that new shoes lack, and I feel more relaxed about shopping now, as I think twice before every purchase. In the long run, it was actually <mark>good value for money</mark>.`],
+ tip:`Choose an object you can describe vividly. The Scene says what it is and where you found it; the Details cover why you bought it, the price and how you use it; the Moment is one memorable day; the Reflection says what it taught you.`
+},
+p3:[
+{kind:`Explain`,q:`Why do people buy things they do not really need?`,
+ think:[`Advertising and social media`,`Emotions and habit`,`Discounts and sales`],
+ model:[`There are several reasons.`,`Advertising constantly creates the feeling that we're missing something, and social media shows us what everyone else has.`,`Some people also shop to cheer themselves up, and big discounts make us feel that we're saving money when we're actually spending it.`,`Understanding these triggers is the first step to more careful shopping.`]},
+{kind:`Evaluate`,q:`Is online shopping better than shopping in real shops?`,
+ think:[`Convenience and price`,`Touching and trying`,`Local shops and community`],
+ model:[`Each has its place.`,`Online shopping is convenient and usually cheaper, especially for people who live far from big shops.`,`On the other hand, real shops allow you to see the quality and often give better advice, and they keep town centres alive.`,`So I'd say the best choice depends on what you're buying.`]},
+{kind:`Opinion`,q:`Should shops be allowed to open on Sundays and public holidays?`,
+ think:[`Convenience`,`Workers' rest`,`Family and community time`],
+ model:[`I think there should be limits.`,`It's convenient for customers, but employees also deserve a day to rest and spend time with their families.`,`A reasonable compromise is to allow some shops, such as pharmacies and small stores, to stay open while others close.`,`Society doesn't need to be available for shopping every day of the week.`]},
+{kind:`Predict`,q:`How will shopping change over the next twenty years?`,
+ think:[`Technology and delivery`,`Sustainable consumption`,`Role of physical shops`],
+ model:[`I think more shopping will move online, with faster delivery and personal recommendations.`,`At the same time, people may become more careful about <mark>sustainable</mark> consumption and prefer to repair, rent or buy secondhand.`,`Physical shops will probably turn into places for experience rather than simple purchases.`,`Those that offer a good atmosphere and expert advice will survive.`]}
+],
+vocab:[
+{w:`buy on impulse`,pos:`verb phrase`,uk:`купувати імпульсивно`,def:`buy something suddenly without planning`,eg:`I bought this jacket on impulse.`},
+{w:`compare prices`,pos:`verb phrase`,uk:`порівнювати ціни`,def:`check the price of the same item in different places`,eg:`I always compare prices online first.`},
+{w:`a bargain`,pos:`noun`,uk:`вигідна покупка`,def:`something sold for less than its usual price`,eg:`The coat was a real bargain.`},
+{w:`good value for money`,pos:`noun phrase`,uk:`гідна ціна за якість`,def:`worth the price you pay`,eg:`The meal was good value for money.`},
+{w:`a rip-off`,pos:`noun`,uk:`грабіжницька ціна`,def:`something that costs far too much`,eg:`Five euros for a coffee is a rip-off.`},
+{w:`window-shopping`,pos:`noun`,uk:`розглядання вітрин без купівлі`,def:`looking at goods in shops without buying`,eg:`We spent the afternoon window-shopping.`},
+{w:`a refund`,pos:`noun`,uk:`повернення коштів`,def:`money given back for something returned`,eg:`I asked for a refund because it was damaged.`},
+{w:`durable`,pos:`adjective`,uk:`міцний, довговічний`,def:`able to last a long time`,eg:`These boots are very durable.`},
+{w:`overpriced`,pos:`adjective`,uk:`завищена ціна`,def:`too expensive for what it is`,eg:`The souvenirs were overpriced.`},
+{w:`a shopaholic`,pos:`noun`,uk:`шопоголік`,def:`a person who loves shopping and cannot stop`,eg:`My sister is a real shopaholic.`},
+{w:`browse`,pos:`verb`,uk:`розглядати, переглядати`,def:`look at things without a clear plan to buy`,eg:`I like browsing in bookshops.`},
+{w:`splash out`,pos:`phrasal verb`,uk:`дозволити собі розкіш`,def:`spend a lot of money on something nice`,eg:`We splashed out on a nice dinner.`}
+],
+ex:[
+{kind:`gap`,tag:`Gap-fill`,title:`Complete the sentences`,instr:`Use the words in the box. Each word is used once.`,
+ bank:[`impulse`,`prices`,`bargain`,`value`,`rip-off`,`window`,`refund`,`durable`,`overpriced`,`splash`],
+ items:[
+ {q:`I bought this jacket on ___ and never wore it.`,a:[`impulse`],why:`<i>On impulse</i> = suddenly, without planning.`},
+ {q:`I always compare ___ online before I buy.`,a:[`prices`],why:`<i>Compare prices</i> = check different shops.`},
+ {q:`At only ten euros, the coat was a real ___.`,a:[`bargain`],why:`<i>A bargain</i> = very cheap for what it is.`},
+ {q:`The meal wasn't cheap, but it was good ___ for money.`,a:[`value`],why:`<i>Good value for money</i>.`},
+ {q:`Five euros for a small coffee is a total ___!`,a:[`rip-off`],why:`<i>A rip-off</i> = too expensive.`},
+ {q:`We spent the afternoon ___-shopping without buying anything.`,a:[`window`],why:`<i>Window-shopping</i> = looking at displays.`},
+ {q:`The phone was damaged, so I asked for a ___.`,a:[`refund`],why:`<i>A refund</i> = money returned.`},
+ {q:`These boots are very ___ and will last for years.`,a:[`durable`],why:`<i>Durable</i> = lasts long.`},
+ {q:`I think the souvenirs in the airport are ___.`,a:[`overpriced`],why:`<i>Overpriced</i> = costing too much.`},
+ {q:`For our anniversary we decided to ___ out on a nice restaurant.`,a:[`splash`],why:`<i>Splash out</i> = spend generously.`}
+ ]},
+{kind:`mcq`,tag:`Meaning`,title:`Choose the best answer`,
+ items:[
+ {q:`<b>"A bargain"</b> is…`,o:[`something cheap for its quality`,`something expensive`,`an agreement`,`a type of shop`],a:0,why:`Good price.`},
+ {q:`<b>"A rip-off"</b> means…`,o:[`something that costs far too much`,`a torn product`,`a free gift`,`a discount`],a:0,why:`Unfair price.`},
+ {q:`Which sentence is correct?`,o:[`I asked for a refund.`,`I asked a refund.`,`I asked to a refund.`,`I asked about refund for.`],a:0,why:`<i>Ask for</i> something.`},
+ {q:`<b>"Splash out"</b> means…`,o:[`spend a lot of money on something nice`,`get wet`,`ask for a discount`,`return a purchase`],a:0,why:`Spend generously.`},
+ {q:`<b>"Durable"</b> describes…`,o:[`something that lasts a long time`,`something very cheap`,`something fashionable`,`something heavy`],a:0,why:`Long-lasting.`},
+ {q:`Which is the best Part 1 answer to <i>"Is it better to buy cheap things often, or expensive things that last?"</i>`,o:[`Expensive and durable, in most cases. A good coat that lasts ten years is cheaper than a new cheap one every winter.`,`Expensive is better.`,`I buy things.`,`Cheap is cheap.`],a:0,why:`Position, reason and comparison.`}
+ ]},
+{kind:`match`,tag:`Collocations`,title:`Match the beginnings to the endings`,instr:`Choose the word that completes each expression.`,
+ items:[
+ [`a shopping …`,`list`,`<i>A shopping list</i> = things you plan to buy.`],
+ [`pay by …`,`card`,`<i>Pay by card</i> = not with cash.`],
+ [`a special …`,`offer`,`<i>A special offer</i> = a reduced price for a short time.`],
+ [`try on a …`,`jacket`,`<i>Try on a jacket</i> = check if clothes fit.`],
+ [`return an …`,`item`,`<i>Return an item</i> = take it back to the shop.`],
+ [`a loyalty …`,`scheme`,`<i>A loyalty scheme</i> = points for regular customers.`],
+ [`out of …`,`stock`,`<i>Out of stock</i> = not available at the moment.`],
+ [`the sales …`,`assistant`,`<i>The sales assistant</i> = the shop worker.`]
+ ]},
+{kind:`label`,tag:`Structure`,title:`Name each part of the answer`,instr:`Question: "Do you think shops should charge for plastic bags?" The sentences are mixed up. Choose the role of each sentence.`,
+ labels:[`Opinion`,`Reason`,`Example`,`Other side`],
+ items:[
+ {s:`Yes, I think it's a very sensible rule.`,a:0,why:`A clear position.`},
+ {s:`A small charge makes people think twice and reuse their bags.`,a:1,why:`The reason.`},
+ {s:`In my country the use of plastic bags dropped sharply after a charge of just a few cents was introduced.`,a:2,why:`A concrete example.`},
+ {s:`Of course, some people find it annoying, but it takes only a few weeks to get used to carrying a bag.`,a:3,why:`The counter-view.`}
+ ]},
+{kind:`rw`,tag:`Upgrade`,title:`Make the sentence Band 7`,instr:`Rewrite each plain sentence using a topic expression. Then compare with the model versions.`,
+ items:[
+ {q:`I bought it suddenly without thinking.`,models:[`I bought it on impulse.`,`I bought it on impulse and regretted it later.`],check:`Did you use <i>on impulse</i>?`},
+ {q:`The restaurant was expensive but worth the money.`,models:[`The restaurant was good value for money.`,`It was pricey but still good value for money.`],check:`Did you use <i>good value for money</i>?`},
+ {q:`The hotel charged too much for a simple breakfast.`,models:[`The breakfast was a rip-off.`,`The hotel's breakfast was overpriced.`],check:`Did you use <i>rip-off</i> or <i>overpriced</i>?`},
+ {q:`We spent a lot of money on a nice dinner for our anniversary.`,models:[`We splashed out on a nice dinner for our anniversary.`,`We splashed out on an anniversary dinner.`],check:`Did you use <i>splash out</i>?`}
+ ]}
+]
+});
+
+window.SP=window.SP||{topics:[]};
+window.SP.topics.push({
+id:'travel',nav:'Travel & Holidays',icon:'🧳',hue:'sky',
+blurb:`Trips, holidays, places you remember and how tourism changes places and people.`,
+p1:[
+{q:`What kind of holiday do you enjoy most?`,
+ ideas:[`Type of holiday`,`Why`,`What you do there`],
+ model:[`A slow holiday in a small place, with no strict plans.`,`I like waking up late, walking around without a map and finding a café where the locals go.`,`Sightseeing marathons exhaust me.`]},
+{q:`Do you prefer travelling alone or with other people?`,
+ ideas:[`Choose`,`Advantages`,`Disadvantages`],
+ model:[`With one close friend.`,`When you travel alone, you have complete freedom, but there's nobody to share the best moments with.`,`With a group, you always have to <mark>compromise</mark> about where to eat and what to see.`]},
+{q:`Where did you go on your last trip?`,
+ ideas:[`Place`,`Reason for going`,`The best part`],
+ model:[`To a small mountain village for a long weekend.`,`I needed a break from screens and noise.`,`The best part was a morning walk in thick fog, when the whole valley seemed to belong to me.`]},
+{q:`Do you like to plan everything in advance or travel spontaneously?`,
+ ideas:[`Your style`,`Why`,`A story`],
+ model:[`Somewhere in between: I book the accommodation but leave the days open.`,`The best moments of my trips have been unplanned, like an invitation to a village wedding.`,`Still, I'd never arrive without somewhere to sleep.`]},
+{q:`What do you usually bring back from your travels?`,
+ ideas:[`Souvenirs`,`Photos`,`Memories`],
+ model:[`Mostly food: local tea, spices or something that can't be bought at home.`,`I avoid typical souvenirs like fridge magnets, because they're all the same.`,`Photos too, but the real souvenirs are the stories.`]},
+{q:`Is there a place you would never want to visit again?`,
+ ideas:[`Place`,`Why not`,`Did you learn something?`],
+ model:[`A resort town in the high season.`,`It was overcrowded and <mark>overpriced</mark>, and everything felt designed for tourists, not for real life.`,`After that trip, I decided to travel only out of season.`]},
+{q:`Do you think travelling changes people?`,
+ ideas:[`Your position`,`How`,`An example`],
+ model:[`Yes, if you let it.`,`Seeing how other people live makes you more tolerant and teaches you to <mark>adapt</mark> to unfamiliar situations.`,`But some people only go abroad to take the same photos as everyone else, and they come back unchanged.`]}
+],
+p2:{
+ cue:`Describe a memorable trip or holiday you have had.`,
+ say:[`where you went and who you went with`,`what you did there`,`what went well or badly`,`and explain why you remember it so well.`],
+ follow:`Do you think people travel more today than in the past?`,
+ model:[
+ `I'd like to describe a trip to the Carpathian mountains that I took with two friends a few summers ago. It was supposed to be a simple three-day hike, but it turned into one of the most memorable trips I've ever had.`,
+ `We carried small backpacks and stayed in mountain huts. During the day we walked along ridges and ate sandwiches on the grass, and in the evenings we talked with other hikers around a wooden table. The problem was that on the second day the weather changed suddenly, and we walked for hours in heavy rain with no view at all. We were soaked and tired, and I admit that we all wanted to turn back. Fortunately, a shepherd let us shelter in his hut and gave us hot tea and cheese, which seemed like the best meal in the world.`,
+ `I particularly remember the moment when the clouds finally opened in the evening and the whole valley was suddenly lit up in gold. Nobody said a word for a few minutes. It was the kind of silence that you can't plan.`,
+ `I remember this trip so well because it was far from perfect, and that was what made it special. We had to <mark>step out of our comfort zone</mark>, and we came back with stories that we still tell. It reminded me that the best trips are those where something unexpected happens, and that real <mark>hospitality</mark> can be found in the simplest places.`],
+ tip:`Choose a trip that had a small problem or surprise. The Scene says where, when and with whom; the Details cover the activities and the difficulty; the Moment is one vivid image; the Reflection explains why it is memorable.`
+},
+p3:[
+{kind:`Explain`,q:`Why do so many people choose to spend their holidays in the same popular places?`,
+ think:[`Safety and familiarity`,`Social media influence`,`Convenience and price`],
+ model:[`There are several reasons.`,`Popular places feel safe: there's good infrastructure, and you know what to expect.`,`Social media also encourages people to visit places they've seen in photos, and package holidays make it cheap and easy.`,`However, many travellers are now looking for quieter alternatives to avoid the crowds.`]},
+{kind:`Evaluate`,q:`Does tourism bring more benefits or problems to a place?`,
+ think:[`Income and jobs`,`Crowds, prices, pollution`,`Local culture`],
+ model:[`It brings both, and the balance depends on how it's managed.`,`Tourism creates jobs and brings money, which can help to preserve historic buildings.`,`But it can also raise prices for locals, damage nature and turn traditions into shows for visitors.`,`With limits on numbers and fair rules, the benefits can outweigh the problems.`]},
+{kind:`Opinion`,q:`Should people travel less in order to protect the environment?`,
+ think:[`Flights and emissions`,`Alternatives such as trains`,`Value of travel`],
+ model:[`I think people should travel more thoughtfully rather than less.`,`Flying produces a lot of emissions, so taking trains for shorter distances and staying longer in one place makes sense.`,`Travel also has real value, because it increases understanding between cultures.`,`The solution is better choices, not a total end to travelling.`]},
+{kind:`Predict`,q:`How might travel and holidays change in the future?`,
+ think:[`Technology`,`Sustainability`,`Slow and local tourism`],
+ model:[`I expect travel to become both more technological and more conscious.`,`Digital tools will make it easier to book and translate, and cleaner transport will become more common.`,`I also think more people will choose local or slow holidays, partly because of cost and partly out of concern for the environment.`,`Experiences will matter more than ticking off famous places.`]}
+],
+vocab:[
+{w:`off the beaten track`,pos:`idiom`,uk:`далеко від туристичних маршрутів`,def:`in a place few tourists visit`,eg:`We stayed in a village off the beaten track.`},
+{w:`step out of your comfort zone`,pos:`idiom`,uk:`вийти із зони комфорту`,def:`try something new and slightly difficult`,eg:`Travelling alone made me step out of my comfort zone.`},
+{w:`hospitality`,pos:`noun`,uk:`гостинність`,def:`friendly and generous treatment of guests`,eg:`We were touched by the local hospitality.`},
+{w:`sightseeing`,pos:`noun`,uk:`огляд визначних місць`,def:`visiting famous places as a tourist`,eg:`We spent two days sightseeing in Rome.`},
+{w:`a tourist trap`,pos:`noun phrase`,uk:`туристична пастка`,def:`a place that is too crowded and expensive for tourists`,eg:`The main square is a typical tourist trap.`},
+{w:`accommodation`,pos:`noun`,uk:`житло (під час поїздки)`,def:`a place to stay while travelling`,eg:`We booked cheap accommodation near the station.`},
+{w:`an itinerary`,pos:`noun`,uk:`маршрут, програма поїздки`,def:`a detailed plan of a journey`,eg:`Our itinerary included three cities.`},
+{w:`adapt`,pos:`verb`,uk:`пристосовуватися`,def:`change to suit a new situation`,eg:`You must adapt to local customs.`},
+{w:`compromise`,pos:`verb`,uk:`йти на компроміс`,def:`accept less than you wanted in order to agree`,eg:`We compromised on a cheaper hotel.`},
+{w:`jet lag`,pos:`noun`,uk:`джетлаг`,def:`tiredness after a long flight across time zones`,eg:`I'm still suffering from jet lag.`},
+{w:`in the high season`,pos:`phrase`,uk:`в розпал сезону`,def:`at the busiest and most expensive time of year`,eg:`Prices double in the high season.`},
+{w:`a stopover`,pos:`noun`,uk:`зупинка в дорозі (пересадка)`,def:`a short stay between two parts of a journey`,eg:`We had a six-hour stopover in Vienna.`}
+],
+ex:[
+{kind:`gap`,tag:`Gap-fill`,title:`Complete the sentences`,instr:`Use the words in the box. Each word is used once.`,
+ bank:[`track`,`zone`,`hospitality`,`sightseeing`,`trap`,`accommodation`,`itinerary`,`adapt`,`lag`,`season`],
+ items:[
+ {q:`We stayed in a small village off the beaten ___.`,a:[`track`],why:`<i>Off the beaten track</i> = far from tourist routes.`},
+ {q:`Travelling alone made me step out of my comfort ___.`,a:[`zone`],why:`<i>Comfort zone</i>.`},
+ {q:`We were touched by the warm ___ of the local people.`,a:[`hospitality`],why:`<i>Hospitality</i> = generous welcome.`},
+ {q:`We spent two days ___ in the old town.`,a:[`sightseeing`],why:`<i>Sightseeing</i> = visiting attractions.`},
+ {q:`The square in front of the cathedral is a typical tourist ___.`,a:[`trap`],why:`<i>A tourist trap</i> = overpriced crowded place.`},
+ {q:`It's best to book your ___ early in summer.`,a:[`accommodation`],why:`<i>Accommodation</i> = a place to stay.`},
+ {q:`Our ___ included three cities in a week.`,a:[`itinerary`],why:`<i>An itinerary</i> = a travel plan.`},
+ {q:`You have to ___ to different food and customs.`,a:[`adapt`],why:`<i>Adapt</i> = adjust.`},
+ {q:`I'm still suffering from jet ___ after the flight.`,a:[`lag`],why:`<i>Jet lag</i> = time-zone tiredness.`},
+ {q:`Hotels are twice as expensive in the high ___.`,a:[`season`],why:`<i>High season</i> = busiest period.`}
+ ]},
+{kind:`mcq`,tag:`Meaning`,title:`Choose the best answer`,
+ items:[
+ {q:`<b>"Off the beaten track"</b> means…`,o:[`away from the usual tourist places`,`on a broken road`,`very expensive`,`close to the sea`],a:0,why:`Less visited.`},
+ {q:`<b>"A tourist trap"</b> is…`,o:[`a crowded, overpriced place for tourists`,`a safe tourist hotel`,`a guided tour`,`a travel scam on the internet`],a:0,why:`Designed to take tourists' money.`},
+ {q:`Which sentence is correct?`,o:[`We compromised on a cheaper hotel.`,`We compromised for a cheaper hotel.`,`We compromised about a cheaper hotel to.`,`We made compromise a cheaper hotel.`],a:0,why:`<i>Compromise on</i>.`},
+ {q:`<b>"Jet lag"</b> is…`,o:[`tiredness after a long flight across time zones`,`a delayed flight`,`a fear of flying`,`luggage getting lost`],a:0,why:`Time-zone fatigue.`},
+ {q:`<b>"Hospitality"</b> means…`,o:[`friendly, generous treatment of guests`,`a type of hotel`,`a hospital for tourists`,`a travel agency`],a:0,why:`Welcome and care.`},
+ {q:`Which is the best Part 1 answer to <i>"Do you prefer travelling alone or with other people?"</i>`,o:[`With one close friend. Alone, you have total freedom but nobody to share the best moments with, and with a group you must compromise about everything.`,`Alone.`,`I travel.`,`Both are good.`],a:0,why:`Position, comparison and balance.`}
+ ]},
+{kind:`match`,tag:`Collocations`,title:`Match the beginnings to the endings`,instr:`Choose the word that completes each expression.`,
+ items:[
+ [`book a …`,`flight`,`<i>Book a flight</i> = reserve a seat on a plane.`],
+ [`pack your …`,`suitcase`,`<i>Pack your suitcase</i> = put your clothes in it.`],
+ [`a guided …`,`tour`,`<i>A guided tour</i> = a visit with a guide.`],
+ [`catch a …`,`train`,`<i>Catch a train</i> = get on it in time.`],
+ [`a return …`,`ticket`,`<i>A return ticket</i> = for going and coming back.`],
+ [`go through …`,`customs`,`<i>Go through customs</i> = border control for goods.`],
+ [`a breathtaking …`,`view`,`<i>A breathtaking view</i> = an amazing sight.`],
+ [`a package …`,`holiday`,`<i>A package holiday</i> = travel and hotel sold together.`]
+ ]},
+{kind:`label`,tag:`Structure`,title:`Name each part of the answer`,instr:`Question: "Is it better to take several short holidays or one long holiday a year?" The sentences are mixed up. Choose the role of each sentence.`,
+ labels:[`Opinion`,`Reason`,`Example`,`Other side`],
+ items:[
+ {s:`I prefer several short breaks.`,a:0,why:`A clear position.`},
+ {s:`You get something to look forward to all year round, and you never get too tired between trips.`,a:1,why:`The reason.`},
+ {s:`Last year I took four long weekends, and each one felt like a small reset.`,a:2,why:`A personal example.`},
+ {s:`On the other hand, a long holiday lets you get properly away from everything and really get to know a place.`,a:3,why:`The counter-view.`}
+ ]},
+{kind:`rw`,tag:`Upgrade`,title:`Make the sentence Band 7`,instr:`Rewrite each plain sentence using a topic expression. Then compare with the model versions.`,
+ items:[
+ {q:`We stayed in a quiet place that tourists don't often visit.`,models:[`We stayed in a quiet place off the beaten track.`,`The village was well off the beaten track.`],check:`Did you use <i>off the beaten track</i>?`},
+ {q:`The local people were very friendly and generous to us.`,models:[`We were touched by the local hospitality.`,`The hospitality of the local people was remarkable.`],check:`Did you use <i>hospitality</i>?`},
+ {q:`The main square was crowded and expensive.`,models:[`The main square was a tourist trap.`,`The main square was a classic tourist trap.`],check:`Did you use <i>tourist trap</i>?`},
+ {q:`Travelling alone made me do things I normally don't do.`,models:[`Travelling alone made me step out of my comfort zone.`,`The trip pushed me out of my comfort zone.`],check:`Did you use <i>step out of your comfort zone</i>?`}
+ ]}
+]
+});
+
+window.SP=window.SP||{topics:[]};
+window.SP.topics.push({
+id:'lifestyle',nav:'Lifestyle & Habits',icon:'🌅',hue:'plum',
+blurb:`Daily routines, healthy and unhealthy habits, and how to change them.`,
+p1:[
+{q:`What does a typical day look like for you?`,
+ ideas:[`Morning`,`Main part of the day`,`Evening`],
+ model:[`I get up early, usually around six, and start with a glass of water and a short walk.`,`Then I work until the afternoon, with a break for lunch.`,`The evenings are for cooking, reading and talking with my family, and I try to be in bed before eleven.`]},
+{q:`Are you a morning person or a night owl?`,
+ ideas:[`Choose`,`How it affects your day`,`Could you change?`],
+ model:[`Definitely a morning person.`,`My head is clearest between seven and eleven, and after nine in the evening I can hardly concentrate.`,`I admire night owls, but I've never managed to <mark>stick to</mark> a late schedule.`]},
+{q:`What healthy habit would you like to develop?`,
+ ideas:[`One habit`,`Why it matters`,`What stops you`],
+ model:[`Stretching every morning.`,`I sit for most of the day, and my back is beginning to complain.`,`The problem is that it's easy to skip when I'm in a hurry, so I'm trying to link it to my first cup of tea.`]},
+{q:`Do you have any bad habits you are trying to get rid of?`,
+ ideas:[`Name a mild habit`,`Why it is bad`,`What you do about it`],
+ model:[`Checking my phone first thing in the morning.`,`It puts me in a reactive mood before the day has even started.`,`So now the phone stays in the kitchen at night, which has helped a lot.`]},
+{q:`Do you think you have a healthy lifestyle?`,
+ ideas:[`Honest assessment`,`Good points`,`What could improve`],
+ model:[`Reasonably, though not perfect.`,`I walk a lot, eat mostly home-cooked meals and sleep enough.`,`Where I could do better is stress: I tend to <mark>take on too much</mark> and then feel exhausted.`]},
+{q:`What do you do to relax after a busy day?`,
+ ideas:[`Activity`,`Why it works`,`How long`],
+ model:[`I take a long, hot bath with a book.`,`It's the one time when nobody expects anything from me.`,`Half an hour is enough to feel like a different person.`]},
+{q:`Have you changed your daily routine in the past few years?`,
+ ideas:[`What changed`,`Why`,`The result`],
+ model:[`Yes, quite a lot, after I started working from home.`,`I now have more control over my time, but I had to learn to separate work from rest.`,`A fixed finishing time really helped.`]}
+],
+p2:{
+ cue:`Describe a habit that you have changed, or would like to change.`,
+ say:[`what the habit is`,`why you want to change it`,`what you have done or could do about it`,`and explain how you would feel if you succeeded.`],
+ follow:`Why is it so difficult for people to change their habits?`,
+ model:[
+ `I'd like to describe a habit that I changed about two years ago: working late into the night. For years I thought that I was most productive after dark, and I often finished work at one in the morning.`,
+ `The problem was that I was permanently tired, and my mood suffered; I was short-tempered with my family and relied on coffee all day. So I decided to change. I started by setting a strict finishing time of eight o'clock and by turning off my laptop at that time, even if the work wasn't finished. In the first two weeks it felt almost impossible, and I broke my own rule several times. What helped was to plan something enjoyable immediately after work, like a walk or a call with a friend, so that I had a reason to stop.`,
+ `I remember the first morning when I woke up before my alarm, feeling rested. I sat at the kitchen window with a cup of tea and watched the street come alive, something I hadn't done for years. It sounds trivial, but I felt in control of my life again.`,
+ `Looking back, I realise that <mark>breaking a habit</mark> is less about willpower and more about replacing it with something that you enjoy. I'm much more <mark>productive</mark> now, though I work fewer hours, and I have the energy for the people who matter to me. It's a good example of how a small change can <mark>improve your quality of life</mark>.`],
+ tip:`Choose a habit that you can describe honestly. The Scene says what it was and why it was a problem; the Details cover the steps you took and the difficulty; the Moment is the first sign of success; the Reflection says what you learned about changing habits.`
+},
+p3:[
+{kind:`Explain`,q:`Why is it so hard for people to change their habits?`,
+ think:[`Automatic behaviour`,`Short-term rewards`,`Lack of support`],
+ model:[`There are several reasons.`,`Habits are automatic, so we do them without thinking, and they often give an immediate reward, like comfort or relief from stress.`,`Changing them needs effort and the benefits come much later, which makes it easy to give up.`,`People succeed more often when they change their environment and have support from others.`]},
+{kind:`Evaluate`,q:`Is a healthy lifestyle mostly a matter of personal choice or of circumstances?`,
+ think:[`Money and time`,`Education and environment`,`Individual responsibility`],
+ model:[`It's a mixture of both.`,`Individuals can decide what to eat and whether to exercise, but healthy food and free time cost money, and not everyone has them.`,`Environment matters too: it's easier to walk in a city with safe streets and parks.`,`So responsibility is shared between people and society.`]},
+{kind:`Opinion`,q:`Should governments tax unhealthy food, such as sugary drinks?`,
+ think:[`Public health`,`Fairness to poorer people`,`Alternatives such as education`],
+ model:[`I think a tax can help, but only together with other measures.`,`It encourages people to choose healthier products and pays for healthcare, and some countries have already seen a drop in sugar consumption.`,`The risk is that it affects poorer families most, so healthy food should become cheaper too.`,`Education is equally important, because people need to understand why the change matters.`]},
+{kind:`Predict`,q:`How will people's lifestyles change in the next twenty years?`,
+ think:[`Technology and work`,`Health and ageing`,`Time and balance`],
+ model:[`I think technology will change daily life even more.`,`Flexible and remote work will let many people decide their own schedules, and devices will monitor health and encourage better habits.`,`At the same time, there'll probably be a stronger movement towards balance, such as digital detox and more time outdoors.`,`The challenge will be to use technology to serve our lifestyle rather than to control it.`]}
+],
+vocab:[
+{w:`a daily routine`,pos:`noun phrase`,uk:`щоденний розпорядок`,def:`the things you do regularly every day`,eg:`My daily routine starts with a walk.`},
+{w:`a morning person`,pos:`noun phrase`,uk:`жайворонок`,def:`someone who feels best early in the day`,eg:`I'm not a morning person at all.`},
+{w:`a night owl`,pos:`noun phrase`,uk:`сова`,def:`someone who is most active late at night`,eg:`My brother is a typical night owl.`},
+{w:`break a habit`,pos:`verb phrase`,uk:`позбутися звички`,def:`stop doing something you do regularly`,eg:`It's hard to break a bad habit.`},
+{w:`stick to`,pos:`phrasal verb`,uk:`дотримуватися`,def:`continue with a plan or rule`,eg:`I try to stick to a regular bedtime.`},
+{w:`productive`,pos:`adjective`,uk:`продуктивний`,def:`achieving a lot`,eg:`I'm most productive in the morning.`},
+{w:`work-life balance`,pos:`noun phrase`,uk:`баланс між роботою та життям`,def:`a good division of time between work and personal life`,eg:`Remote work improved my work-life balance.`},
+{w:`take on too much`,pos:`verb phrase`,uk:`братися за забагато`,def:`accept more tasks than you can handle`,eg:`She always takes on too much at work.`},
+{w:`wind down`,pos:`phrasal verb`,uk:`розслаблятися, заспокоюватися`,def:`relax after a busy period`,eg:`I read to wind down in the evening.`},
+{w:`a balanced diet`,pos:`noun phrase`,uk:`збалансоване харчування`,def:`a diet with the right amounts of different foods`,eg:`A balanced diet includes lots of vegetables.`},
+{w:`sedentary`,pos:`adjective`,uk:`малорухливий`,def:`involving a lot of sitting and little exercise`,eg:`A sedentary lifestyle is bad for your back.`},
+{w:`quality of life`,pos:`noun phrase`,uk:`якість життя`,def:`how good and satisfying your life is`,eg:`Regular exercise improves your quality of life.`}
+],
+ex:[
+{kind:`gap`,tag:`Gap-fill`,title:`Complete the sentences`,instr:`Use the words in the box. Each word is used once.`,
+ bank:[`routine`,`person`,`owl`,`break`,`stick`,`productive`,`balance`,`much`,`down`,`diet`],
+ items:[
+ {q:`My daily ___ starts with a short walk and a cup of tea.`,a:[`routine`],why:`<i>Daily routine</i>.`},
+ {q:`I'm definitely a morning ___; I'm useless after nine.`,a:[`person`],why:`<i>A morning person</i>.`},
+ {q:`My brother is a typical night ___ and often works until 3 a.m.`,a:[`owl`],why:`<i>A night owl</i>.`},
+ {q:`It's really hard to ___ a bad habit.`,a:[`break`],why:`<i>Break a habit</i> = stop it.`},
+ {q:`I try to ___ to a regular bedtime.`,a:[`stick`],why:`<i>Stick to</i> = keep following.`},
+ {q:`I'm much more ___ since I started getting up earlier.`,a:[`productive`],why:`<i>Productive</i> = getting a lot done.`},
+ {q:`Working from home improved my work-life ___.`,a:[`balance`],why:`<i>Work-life balance</i>.`},
+ {q:`She always takes on too ___ and ends up exhausted.`,a:[`much`],why:`<i>Take on too much</i>.`},
+ {q:`I read a book to wind ___ after work.`,a:[`down`],why:`<i>Wind down</i> = relax.`},
+ {q:`A balanced ___ includes vegetables, protein and carbohydrates.`,a:[`diet`],why:`<i>A balanced diet</i>.`}
+ ]},
+{kind:`mcq`,tag:`Meaning`,title:`Choose the best answer`,
+ items:[
+ {q:`<b>"A night owl"</b> is someone who…`,o:[`is most active late at night`,`sleeps all day`,`keeps birds`,`wakes at dawn`],a:0,why:`Works or lives at night.`},
+ {q:`<b>"Wind down"</b> means…`,o:[`relax after a busy time`,`stop a clock`,`run quickly`,`get angry`],a:0,why:`Relax gradually.`},
+ {q:`Which sentence is correct?`,o:[`I try to stick to a regular routine.`,`I try to stick at a regular routine.`,`I try to stick with to a regular routine.`,`I try to stick for a regular routine.`],a:0,why:`<i>Stick to</i>.`},
+ {q:`<b>"Sedentary"</b> describes…`,o:[`a lifestyle with little movement`,`a very active person`,`a type of diet`,`a quiet place`],a:0,why:`Sitting a lot.`},
+ {q:`<b>"Take on too much"</b> means…`,o:[`accept more work than you can manage`,`eat too much`,`carry heavy things`,`argue with people`],a:0,why:`Overload.`},
+ {q:`Which is the best Part 1 answer to <i>"Are you a morning person or a night owl?"</i>`,o:[`Definitely a morning person. My head is clearest between seven and eleven, and after nine in the evening I can hardly concentrate.`,`I am a person.`,`Morning is the time before noon.`,`Maybe both.`],a:0,why:`Position, detail and contrast.`}
+ ]},
+{kind:`match`,tag:`Collocations`,title:`Match the beginnings to the endings`,instr:`Choose the word that completes each expression.`,
+ items:[
+ [`get into the …`,`habit`,`<i>Get into the habit</i> = start doing something regularly.`],
+ [`a hectic …`,`schedule`,`<i>A hectic schedule</i> = a very busy timetable.`],
+ [`burn the candle at both …`,`ends`,`<i>Burn the candle at both ends</i> = overwork and sleep too little.`],
+ [`take regular …`,`exercise`,`<i>Take regular exercise</i> = be active often.`],
+ [`cut down on …`,`sugar`,`<i>Cut down on sugar</i> = eat less of it.`],
+ [`get a good night's …`,`sleep`,`<i>A good night's sleep</i> = rest properly.`],
+ [`a healthy …`,`lifestyle`,`<i>A healthy lifestyle</i> = habits that keep you well.`],
+ [`set a …`,`goal`,`<i>Set a goal</i> = decide what to achieve.`]
+ ]},
+{kind:`label`,tag:`Structure`,title:`Name each part of the answer`,instr:`Question: "Is it a good idea to have the same routine every day?" The sentences are mixed up. Choose the role of each sentence.`,
+ labels:[`Opinion`,`Reason`,`Example`,`Other side`],
+ items:[
+ {s:`In general, yes, I think a basic routine is very helpful.`,a:0,why:`A clear position.`},
+ {s:`It saves energy because you don't have to decide everything from scratch, and it makes you feel in control.`,a:1,why:`The reason.`},
+ {s:`When I fixed my breakfast and bedtime, I noticed that I had much more energy during the day.`,a:2,why:`A personal example.`},
+ {s:`However, if everything is identical, life can become boring, so I leave my weekends free.`,a:3,why:`The counter-view.`}
+ ]},
+{kind:`rw`,tag:`Upgrade`,title:`Make the sentence Band 7`,instr:`Rewrite each plain sentence using a topic expression. Then compare with the model versions.`,
+ items:[
+ {q:`It is difficult to stop a bad habit.`,models:[`It's hard to break a bad habit.`,`Breaking a bad habit takes real effort.`],check:`Did you use <i>break a habit</i>?`},
+ {q:`I relax in the evening by listening to music.`,models:[`I wind down in the evening with music.`,`Music helps me wind down after work.`],check:`Did you use <i>wind down</i>?`},
+ {q:`She accepts too many tasks and is always tired.`,models:[`She takes on too much and is always tired.`,`She tends to take on too much.`],check:`Did you use <i>take on too much</i>?`},
+ {q:`I find it hard to keep following a plan.`,models:[`I find it hard to stick to a plan.`,`I struggle to stick to my schedule.`],check:`Did you use <i>stick to</i>?`}
+ ]}
+]
+});
+
 
 </script>
 <script>
